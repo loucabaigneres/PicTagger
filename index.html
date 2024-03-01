@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Classification d'Images</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <section class="left">
+            <div id="dropArea">
+                <div id="uploadDiv">
+                    <img
+                        class="icon"
+                        src="images/icons/upload.png"
+                        alt="Upload file"
+                    />
+                    <h2>Upload image</h2>
+                </div>
+                <div id="imageContainer"></div>
+            </div>
+        </section>
+        <section class="right">
+            <div class="id">
+                <img class="logo" src="images/LogoTensorFlow.png" alt="" />
+                <h1>PicTagger</h1>
+            </div>
+            <p>
+                Here is an image classification model trained to recognise
+                various classes of images. You can upload images and obtain the
+                3 things, as a percentage, that resemble the image
+            </p>
+            <ul id="keywords"></ul>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.0.4"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

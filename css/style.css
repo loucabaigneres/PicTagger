@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("images.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 32px;
+    font-family: "Roboto", sans-serif;
+}
+
+.left {
+    background-color: #dbcdc6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.left > #dropArea {
+    width: 100%;
+    height: 100%;
+    border: 3px dashed #001a2c;
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left > #dropArea.highlight {
+    border-color: #98c1d9;
+}
+
+.left > #dropArea > #uploadDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.left > #dropArea > #imageContainer {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.left > #dropArea > #imageContainer > img {
+    max-width: 80%;
+    border-radius: 12px;
+}
+
+.left > div > button {
+    background-color: #001a2c;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 48px;
+}
+
+.right > .id {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.right > .id > h1 {
+    font-size: 48px;
+    color: #092c4c;
+}
+
+.right > p {
+    text-align: center;
+}
+
+.right > #keywords {
+    background-color: #dbcdc6;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 24px;
+}
